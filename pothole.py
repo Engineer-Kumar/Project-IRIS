@@ -22,6 +22,7 @@ for box in results.boxes:
     label = results.names[cls_id]
     print(f"Detected {label} with confidence {conf:.2f}")
 
+
     x1, y1, x2, y2 = map(int, box.xyxy[0])
     cv2.rectangle(img_rgb, (x1, y1), (x2, y2), (255, 0, 0), 2)
     cv2.putText(img_rgb, f"{label} {conf:.2f}", (x1, y1 - 10),

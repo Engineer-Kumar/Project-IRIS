@@ -8,7 +8,7 @@ import time
 from PIL import Image
 from datetime import datetime
 from ultralytics import YOLO
-from transformers import BlipProcessor, BlipForConditionalGeneration, BlipForQuestionAnswering
+from transformers import BlipProcessor, BlipForConditionalGeneration, BlipForQuestionAnswering 
 import easyocr
 import pyttsx3
 import json
